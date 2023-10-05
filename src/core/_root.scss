@@ -53,3 +53,100 @@
 
 	--rs-phone-visible: block; /* Visibility of the phone for mobile users | Default: block */
 }
+
+/* overrides */
+
+/* Fix for gif picker*/
+
+#app-mount .navList-YSb9UB {
+    width: 100%;
+}
+
+#app-mount .contentWrapper-3vHNP2 .header-11eigE, #app-mount .contentWrapper-3vHNP2 .header-uVCAlo, #app-mount .contentWrapper-3vHNP2 .header-JHwfVI, #app-mount .contentWrapper-3vHNP2 .header-2TLOnc {
+	margin-left: 128px;
+}
+
+#app-mount .navItem-3McpmW {
+	width: auto;
+}
+.header-11eigE {
+	grid-column: 2/3;
+}
+
+.header-2TLOnc {
+	grid-column: 2/3;
+	margin-left: 176px!important;
+}
+
+.header-uVCAlo {
+	grid-column: 2/3;
+}
+
+/* Border radius for profile popup */
+
+#app-mount .userPopoutOuter-3AVBmJ {
+	border-radius: 10px
+}
+
+/* Mention fix for disabled chat bubbles */
+
+.messageContent-2t3eCI {
+	padding-left: 5px!important;
+}
+
+/* reply to fix */
+
+.repliedTextContent-2hOYMB {
+	margin-left: 0!important;
+}
+
+.chatContent-3KubbW{
+    background: var(--bg-primary);
+}
+
+#app-mount .activityPanel-9icbyU {
+	background: transparent;
+}
+
+.avatarDecoration-34OC0G {
+		width: calc(var(--chat-avatar-size)*var(--decoration-to-avatar-ratio));
+		height: calc(var(--chat-avatar-size)*var(--decoration-to-avatar-ratio));
+		margin-top: calc(-8px*var(--decoration-to-avatar-ratio)/2);
+}
+
+.avatarDecoration-2Wb1Au{
+	display: none;
+}
+.container-ZMc96U img {
+  height: calc(24px - calc(var(--rs-small-spacing) * 2));
+  width: calc(24px - vcalc(var(--rs-small-spacing) * 2));
+  position: relative;
+  top: var(--rs-small-spacing)!important;
+  left: var(--rs-small-spacing)!important;
+}
+
+.avatar-31d8He {
+    position: relative;
+    top: var(--rs-small-spacing)!important;
+    left: var(--rs-small-spacing)!important;
+    height: calc(100% - calc(var(--rs-small-spacing) * 2));
+    width: calc(100% - calc(var(--rs-small-spacing) * 2));
+}
+
+
+.wrapper-3Un6-K .avatar-31d8He {
+  height: calc(100% -1px);
+  width:  calc(100% -1px);
+  top: 2px;
+  left: 2px;
+  clip-path: none!important
+}
+
+#app-mount .wrapper-3Un6-K:not([style*="80px;"], [style*="120px;"], [style*="16px"]) > svg > foreignobject:not(:only-child) img {
+  clip-path: none!important;
+}
+
+.container-3XgAHv {
+  background: none;
+}
+
